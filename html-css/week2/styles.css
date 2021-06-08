@@ -89,7 +89,6 @@
     flex-direction: column-reverse;
   }
   
-  /* I used this app Ditlev showed us https://cssgrid-generator.netlify.app/*/
   .img-logo {
     padding-top: 20px;
     display: grid;
@@ -102,11 +101,6 @@
   
   a > img {
     max-width: 50%;
-  }
-  
-  a > img:hover {
-    border: 2px solid #777;
-    transition: 500ms;
   }
   
   footer {
