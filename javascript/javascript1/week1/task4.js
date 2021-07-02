@@ -4,8 +4,8 @@ let firstWords = ['Amusing', 'Enjoyable', 'Entertaining', 'Lively', 'Pleasant', 
 
 let secondWords = ['Gargle', 'Thingy', 'Master', 'Socks', 'Whiskers', 'Cake', 'Fault', 'Ideas', 'Lettuce', 'Story'];
 
-const randomNumber = Math.floor(Math.random() * 10);
+const randomNumber = Math.floor(Math.random() * firstWords.length);
 
-let startUpName = firstWords[randomNumber] + ' ' + secondWords[randomNumber];
+const startUpName = firstWords[randomNumber] + ' ' + secondWords[randomNumber];
 
-console.log('Your start ups new name is: \''+ startUpName + '\' and contains ' + startUpName.length + ' character.')
+console.log(`Your start ups new name is: "${startUpName}" and contains ${startUpName.length} character.`)
