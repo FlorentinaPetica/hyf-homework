@@ -14,5 +14,5 @@ const names = [
   let nameToRemove = "Ahmad";
   
   names.splice(names.indexOf(nameToRemove), 1);
-  
+
   console.log(names);
