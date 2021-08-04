@@ -1,6 +1,6 @@
-let names = []
-let todoList = []
-let calculation = ['+', '-', '/', '*']
+const names = []
+const todoList = []
+const calculation = ['+', '-', '/', '*']
 
 function getReply(command) {
     if (command.indexOf('name is') !== -1) {
@@ -79,6 +79,9 @@ function getReply(command) {
         }
 
         setTimeout(setTimer, totalInMilliseconds, totalMinutes)
+        
+    } else {
+        return `Can you please repeat?`
     }
 }
 
@@ -92,3 +95,4 @@ console.log(getReply('What day is it today?'))
 console.log(getReply('what is 33 + 3'))
 console.log(getReply('what is 4 * 12'))
 console.log(getReply('Set timer to 2 minutes'))
+console.log(getReply(' kdfkjfk'))
