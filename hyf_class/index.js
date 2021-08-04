@@ -44,3 +44,12 @@ function factorial(n){
 
     console.log(fib(1));
     console.log(fib(3));
+
+    function formatCreditCardNumber(num) {
+
+        let cardInfo = {
+            original: num,
+            formatted: num.toString().replace(/(\d{4})/g, '$1 ').trim(),
+        }
+        return cardInfo;
+    }
