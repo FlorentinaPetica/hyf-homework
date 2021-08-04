@@ -2,8 +2,7 @@ let names = []
 let todoList = []
 let calculation = ['+', '-', '/', '*']
 
-function getReplay(command) {
-
+function getReply(command) {
     if (command.indexOf('name is') !== -1) {
         names.push(command.slice(command.indexOf('name is') + 'name is'.length))
         return `Nice to meet you ${names[0]}`
@@ -14,7 +13,8 @@ function getReplay(command) {
     }
 
     if (command.toLowerCase().indexOf('add') !== -1) {
-        todoList.push(command.slice(command.indexOf('add') + 5, command.indexOf('to') - 1)
+        todoList.push(
+            command.slice(command.indexOf('add') + 5, command.indexOf('to') - 1)
         )
     }
 
@@ -39,7 +39,7 @@ function getReplay(command) {
         }
     }
 
-    if (command.includes('What is on my todo?')) {
+    if (command.toLowerCase().includes('What is on my')) {
         return `You have ${todoList} in your todo list`
     }
 
@@ -49,12 +49,13 @@ function getReplay(command) {
             { month: 'long', year: 'numeric' }
         )}.`
     }
-    
+
     for (let index = 0; index < calculation.length; index++) {
         if (command.includes(calculation[index])) {
-            let numbers = command.match(/\d+/g);
+            let numbers = command.match(/\d+/g)
             if (calculation[index] === '+') {
-                return `${parseInt(numbers[0]) + parseInt(numbers[1])}`
+                let result = parseInt(numbers[0]) + parseInt(numbers[1])
+                return result
             }
             if (calculation[index] === '/') {
                 return `${numbers[0] / numbers[1]}`
@@ -67,14 +68,27 @@ function getReplay(command) {
             }
         }
     }
+
+    if (command.toLowerCase().includes('minutes')) {
+        const totalMinutes = command.match(/\d+/)
+        const totalInMilliseconds = totalMinutes[0] * 60 * 1000
+        console.log(`Timer set to ${totalMinutes[0]} minutes.`)
+
+        function setTimer(minutes) {
+            console.log(minutes + ' minut(s) are done')
+        }
+
+        setTimeout(setTimer, totalInMilliseconds, totalMinutes)
+    }
 }
 
-console.log(getReplay('Hello my name is Benjamin'))
-console.log(getReplay('What is my name?'))
-console.log(getReplay('Add fishing to my todo'))
-console.log(getReplay('Add singing in the shower to my todo'))
-console.log(getReplay('Remove fishing from my todo'))
-console.log(getReplay('What is on my todo?'))
-console.log(getReplay('What day is it today?'))
-console.log(getReplay('what is 33 + 3'))
-console.log(getReplay('what is 4 * 12'))
+console.log(getReply('Hello my name is Benjamin'))
+console.log(getReply('What is my name?'))
+console.log(getReply('Add fishing to my todo'))
+console.log(getReply('Add singing in the shower to my todo'))
+console.log(getReply('Remove fishing from my todo'))
+console.log(getReply('What is on my todo?'))
+console.log(getReply('What day is it today?'))
+console.log(getReply('what is 33 + 3'))
+console.log(getReply('what is 4 * 12'))
+console.log(getReply('Set timer to 2 minutes'))
