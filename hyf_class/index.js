@@ -53,3 +53,34 @@ function factorial(n){
         }
         return cardInfo;
     }
+
+    function getSentimentScore(getFelling) {
+
+        let pos = [];
+        let neg = [];
+        
+        for (let i = 0; i < positive.length; i++) {
+    
+            if (getFelling.includes(positive[i])) {
+                
+                pos.push(positive[i]);
+                
+            } 
+            
+            if (getFelling.includes(negative[i])) {
+                
+                neg.push(negative[i]);
+            }
+        }
+    
+        let result = {
+            score: pos.length - neg.length,
+            positiveWords: pos,
+            negativeWords: neg,
+          }
+    
+        return result;
+    }
+    
+    console.log(getSentimentScore('I am mega super awesome happy')); 
+    console.log(getSentimentScore('I am sad but awesome today')); 
