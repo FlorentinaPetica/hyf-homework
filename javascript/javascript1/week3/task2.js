@@ -9,9 +9,9 @@ const travelTime = calcTravelTime(travelInformation);
 
 function calcTravelTime(travelInformation) {
     const travelInMinutes = (travelInformation.destinationDistance / travelInformation.speed * 60);
-    const h = Math.floor(travelInMinutes / 60);
-    const m = Math.floor(travelInMinutes % 60);
-    return `${h} hours and ${m} minutes`;
+    const hours = Math.floor(travelInMinutes / 60);
+    const minutes = Math.floor(travelInMinutes % 60);
+    return `${hours} hours and ${minutes} minutes`;
 }
 
 console.log(travelTime);
