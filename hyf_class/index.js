@@ -54,6 +54,10 @@ function factorial(n){
         return cardInfo;
     }
 
+    
+const positive = ['happy', 'awesome', 'super', 'yes', 'wonderfull', 'beautifull', 'beauty'] 
+const negative = ['bad', 'sad', 'unhappy', 'bored', 'tired',' depressed']
+
     function getSentimentScore(getFelling) {
 
         let pos = [];
