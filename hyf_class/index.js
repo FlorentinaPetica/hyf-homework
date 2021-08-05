@@ -88,3 +88,34 @@ const negative = ['bad', 'sad', 'unhappy', 'bored', 'tired',' depressed']
     
     console.log(getSentimentScore('I am mega super awesome happy')); 
     console.log(getSentimentScore('I am sad but awesome today')); 
+
+    function getCharacterFrequencies(str) {
+
+        let arrStr = str.match(/\D/g)
+        
+        let count = {}
+       
+        arrStr.forEach(item => {
+            if(count[item]) {
+                count[item] +=1
+                return
+            }
+            count[item] = 1;
+        });        
+
+        let result = [{length: arrStr.length}];
+
+        let keysArr = Object.keys(count);
+        let valueArr = Object.values(count)
+         
+        for (let i = 0; i < keysArr.length; i++) {
+            let char = {character: keysArr[i],
+                counting: valueArr[i],
+                    }
+                result.splice(-1,0,char)
+        }
+
+     return result;
+    }
+
+    console.log(getCharacterFrequencies('happy'));
