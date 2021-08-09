@@ -42,3 +42,29 @@ function countDanishLetters(str) {
 
 console.log(countDanishLetters(danishString));
 console.log(countDanishLetters(danishString2));
+
+//Spirit animal name generator
+
+const spiritAnimals = ['butterfly', 'spider', 'crow', 'owl', 'hummingbird', 'hawk', 'grasshopper', 'eagle', 'squirrel', 'rabbit']
+
+function getName() {
+    return userName.value;
+}
+
+    function getSpiritualAnimal() {
+    if(getName() === ' ' || !isNaN(getName())) {
+        alert(`Please insert a valid name`)
+    } else if (document.getElementById('click').selected) {
+        document.getElementById('button').innerText = 'Get new result';
+        document.getElementById('animal').innerHTML = `${getName()} - The ${spiritAnimals[Math.floor(Math.random() * spiritAnimals.length)]}`;
+    }
+}
+
+function getSpiritualAnimalOver() {
+    if(getName() === ' ' || !isNaN(getName())) {
+        return
+    } else if (document.getElementById('hoover').selected) {
+        document.getElementById('button').innerText = 'Hoover for new result';
+        document.getElementById('animal').innerHTML = `${getName()} - The ${spiritAnimals[Math.floor(Math.random() * spiritAnimals.length)]}`;
+    }
+}
