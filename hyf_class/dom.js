@@ -28,5 +28,3 @@ div.innerHTML = 'This div was created using Js'
 const addDiv = document.querySelector('body')
 addDiv.appendChild(div);
 div.style.backgroundColor = 'blue'
-
-
