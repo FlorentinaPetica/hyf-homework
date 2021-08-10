@@ -16,7 +16,6 @@ function renderProducts(products) {
         ratings.innerHTML = `Rating: ${products[i].rating}`
 
         element.appendChild(list);
-        
         list.append(price);
         list.append(ratings);
     }
