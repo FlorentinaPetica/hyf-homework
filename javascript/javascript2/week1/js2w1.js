@@ -1,11 +1,11 @@
 // find the shortest word of an array of words
 
-const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
+const danishWords = ["bil", "plante", "kaffe", 'du', "bog", "ø", "planetarium"];
 
 function findShortWord(danishWords) {
-    let shortestWord = danishWords[0].length;
+    let shortestWord = danishWords[0];
     danishWords.forEach(element => {
-        if (element.length < shortestWord) {
+        if (element.length < shortestWord.length) {
             shortestWord = element
         }
     })
