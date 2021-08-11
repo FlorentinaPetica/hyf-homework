@@ -3,7 +3,7 @@ console.log("Script loaded");
 const products = getAvailableProducts();
 console.log(products);
 
-let element = document.querySelector('ul')
+let element = document.getElementById('list')
 
 function renderProducts(products) {
     for (let i=0; i<products.length; i++) {
