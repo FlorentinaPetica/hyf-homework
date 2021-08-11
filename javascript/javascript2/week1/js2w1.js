@@ -52,7 +52,7 @@ function getName() {
 }
 
     function getSpiritualAnimal() {
-    if(getName() === ' ' || !isNaN(getName())) {
+    if(getName() === '' || !isNaN(getName())) {
         alert(`Please insert a valid name`)
     } else if (document.getElementById('click').selected) {
         document.getElementById('button').innerText = 'Get new result';
@@ -61,7 +61,7 @@ function getName() {
 }
 
 function getSpiritualAnimalOver() {
-    if(getName() === ' ' || !isNaN(getName())) {
+    if(getName() === '' || !isNaN(getName())) {
         return
     } else if (document.getElementById('hoover').selected) {
         document.getElementById('button').innerText = 'Hoover for new result';
