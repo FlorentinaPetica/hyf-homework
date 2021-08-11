@@ -2,16 +2,10 @@
 
 const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
 
-let lengths = [];
-for (let index = 0; index < danishWords.length; index++) {
-    lengths.push(danishWords[index].length)
-}
-const min = Math.min(...lengths)
-
 function findShortWord(danishWords) {
-    let shortestWord = min;
+    let shortestWord = danishWords[0].length;
     danishWords.forEach(element => {
-        if (element.length === shortestWord) {
+        if (element.length < shortestWord) {
             shortestWord = element
         }
     })
