@@ -1,0 +1,51 @@
+/* Fixed sidenav, full height */
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 181, 185);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    color: darkblue;
+    display: block;
+    border: none;
+    border-bottom: 1px solid darkcyan;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: darkorchid;
+}
+
+main {
+    margin-left: 200px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.active {
+    background-color: deepskyblue;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: dodgerblue;
+    padding-left: 8px;
+}
+
