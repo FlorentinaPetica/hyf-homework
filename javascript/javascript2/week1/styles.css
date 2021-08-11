@@ -1,0 +1,7 @@
+div {
+    padding-bottom: 20px;
+}
+
+input:hover {
+    border-color: blue;
+}
