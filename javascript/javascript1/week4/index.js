@@ -76,11 +76,9 @@ function getReply(command) {
         const totalInMilliseconds = totalMinutes[0] * 60 * 1000
         console.log(`Timer set to ${totalMinutes[0]} minutes.`)
 
-        function setTimer(minutes) {
-            console.log(minutes + ' minut(s) are done')
-        }
-
-        // setTimeout(setTimer, totalInMilliseconds, totalMinutes)
+        setTimeout(function () {
+            console.log(totalMinutes + ' minut(s) are done')
+          }, totalInMilliseconds);
         
     } else {
         return `Can you please repeat?`
