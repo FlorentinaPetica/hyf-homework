@@ -16,7 +16,7 @@ function getReply(command) {
 
     if (command_.indexOf('add') !== -1) {
         todoList.push(
-            command.slice(command.indexOf('add') + 5, command.indexOf('to') - 1)
+            command.slice(command.indexOf('add') + ' add '.length, command.indexOf(' to my'))
         )
     }
 
