@@ -1,0 +1,41 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color:cadetblue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 20px;
+}
+
+.js2w2 {
+    height: 300px;
+    
+}
+
+.hyf-bay, .js2w2 {
+    margin: 0 auto;
+    border: 1px solid blue;
+    width: 50%;
+    text-align: center;
+    background-color: cornsilk;
+    margin-bottom: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+li:first-child {
+    padding-top: 10px;
+    font-weight: bolder;
+}
