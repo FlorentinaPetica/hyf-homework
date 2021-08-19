@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+    margin-top: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+  }
+  
+  nav span {
+    font-family: ultra;
+    text-shadow: 4px 4px 4px rgb(167, 168, 235);
+    color: teal;
+  }
+  
+  .main {
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgb(64, 33, 241);
+    border-radius: 2px;
+    width: 50%;
+    text-align: center;
+    background-color: cornsilk;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  #searchProduct {
+    width: 60%;
+    text-align: center;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+  }
+  
+  #searchProduct:focus {
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 5px blue;
+    border: none;
+  }
+  
+  div.list {
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 60%;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    border: 1px solid teal;
+    border-top: none;
+    margin-bottom: 20px;
+  }
+  
+  li:first-child {
+    font-weight: bolder;
+    background-color: teal;
+    border: none;
+  }
+  
+  input {
+    margin: 15px 0 25px 0;
+  }
+  
+  button {
+      color: #fff !important;
+      text-decoration: none;
+      background:teal;
+      padding: 5px 25px 5px 25px;
+      border-radius: 25px;
+      display: inline-block;
+      border: none;
+      transition: all 0.4s ease 0s;
+  }
+  
+  button:hover {
+      text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+      transition: all 0.4s ease 0s;
+  }
