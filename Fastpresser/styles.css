@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: Rampart One;
+  color: #00008b;
+  font-weight: bolder;
+}
+
+#my-canvas {
+  position: absolute;
+  z-index: -100;
+  width: 600px;
+  height: 500px;
+}
+.container {
+  max-width: 625px;
+  margin: 5% auto;
+  padding: 15px;
+  -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    0px 0px 24px 0px rgba(0, 0, 0, 0);
+  box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    0px 0px 24px 0px rgba(0, 0, 0, 0);
+}
+
+input,
+select,
+button,
+option,
+label {
+  font-family: monospace;
+}
+
+label {
+  font-size: 14px;
+}
+
+.option1 {
+  float: left;
+}
+
+.option2 {
+  float: right;
+}
+
+label {
+  display: block;
+}
+
+#input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.start,
+#resetButton {
+  text-align: center;
+}
+
+#start-button {
+  background: transparent;
+  border: none;
+  margin-top: 25px;
+}
+
+.stroke-solid {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 300;
+  stroke-width: 3px;
+  transition: stroke-dashoffset 1s ease, opacity 1s ease;
+}
+
+#start-button:hover {
+  transform: scale(1.1);
+  border-radius: 50px;
+}
+
+#game-area p {
+  font-size: 25px;
+  padding-top: 50px;
+  margin-block-end: 0;
+}
+
+#game-area {
+  display: flex;
+  justify-content: center;
+}
+
+.left,
+.right {
+  color: black;
+}
+
+.leftPlayer {
+  border-radius: 15%;
+  text-align: center;
+  background-color: rgb(245, 222, 179);
+  height: 200px;
+  width: 200px;
+}
+
+.rightPlayer {
+  margin-left: 15px;
+  background-color: #008b8b;
+  height: 200px;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 15%;
+}
+
+#resetButton {
+  padding-top: 20px;
+}

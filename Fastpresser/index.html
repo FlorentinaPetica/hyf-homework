@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cliker game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="confetti-js-master/dist/index.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <canvas id="my-canvas"></canvas>
+        <section class="start">
+          <h1>Fastest presser</h1>
+          <input
+            type="text"
+            placeholder="Set game duration"
+            id="input"
+            onchange="inputValue()"
+          />
+          <div class="option1">
+            <label for="color1">Player 1 select color</label>
+            <select name="color" id="color1" onchange="setColor()">
+              <option value="default" id="default">Default color</option>
+              <option value="red" id="red">Red</option>
+              <option value="blue" id="blue">Blue</option>
+              <option value="pink" id="pink">Pink</option>
+              <option value="yellow" id="yellow">Yellow</option>
+            </select>
+          </div>
+          <div class="option2">
+            <label for="color2">Player 2 select color</label>
+            <select name="color" id="color2" onchange="setColor()">
+              <option value="default2" id="default2">Default color</option>
+              <option value="violet" id="violet">Violet</option>
+              <option value="green" id="green">Green</option>
+              <option value="orange" id="orange">Orange</option>
+              <option value="magenta" id="magenta">Magenta</option>
+            </select>
+          </div>
+          <svg
+            version="1.1"
+            id="start-button"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            height="50px"
+            width="50px"
+            viewBox="0 0 100 100"
+            enable-background="new 0 0 100 100"
+            xml:space="preserve"
+          >
+            <path
+              class="stroke-solid"
+              fill="none"
+              stroke="#00008b"
+              d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
+            C97.3,23.7,75.7,2.3,49.9,2.5"
+            />
+            <path
+              class="icon"
+              fill="#00008b"
+              d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"
+            />
+          </svg>
+          <p id="count-down"></p>
+        </section>
+        <div id="game-area">
+          <div class="leftPlayer">
+            <p>Press S</p>
+            <span id="left"></span>
+          </div>
+          <div class="rightPlayer">
+            <p>Press L</p>
+            <span id="right"></span>
+          </div>
+        </div>
+        <div id="resetButton"></div>
+      </div>
+
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
