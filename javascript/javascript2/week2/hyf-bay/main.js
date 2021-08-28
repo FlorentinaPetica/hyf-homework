@@ -101,6 +101,44 @@ function renderProducts(products) {
         `;
       list.appendChild(ul);
     });
+  } else if (document.getElementById("az").selected) {
+    const filterAz = products.sort(function(a, b){
+      if(a.name < b.name) { return -1; }
+      if(a.name > b.name) { return 1; }
+      return 0;
+  })
+      
+console.log(filterAz)
+    list.innerHTML = "";
+
+    filterAz.forEach((product) => {
+      let ul = document.createElement("ul");
+      ul.innerHTML = `
+        <li>${product.name}</li>
+        <li>Price: ${product.price}</li>
+        <li>Rating: ${product.rating}</li>
+        `;
+      list.appendChild(ul);
+    });
+  } else if (document.getElementById("za").selected) {
+    const filterZa = products.sort(function(a, b){
+      if(a.name < b.name) { return 1; }
+      if(a.name > b.name) { return -1; }
+      return 0;
+  })
+      
+console.log(filterZa)
+    list.innerHTML = "";
+
+    filterZa.forEach((product) => {
+      let ul = document.createElement("ul");
+      ul.innerHTML = `
+        <li>${product.name}</li>
+        <li>Price: ${product.price}</li>
+        <li>Rating: ${product.rating}</li>
+        `;
+      list.appendChild(ul);
+    });
   }
 }
 

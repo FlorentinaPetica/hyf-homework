@@ -19,6 +19,8 @@
       <select id="select">
           <option value="price" id='price' selected>Max price</option>
           <option value="ratings" id='ratings'>Higher Ratings</option>
+          <option value="az" id="az">Filter from A-Z</option>
+          <option value="za" id="za">Filter from Z-A</option>
         </select><br>
       <input type="text" pattern="[0-9]{4}" maxlength="6" id="filterValue" onchange="getFilterValue()" placeholder="Enter a value">
       <button id='filter' onclick="renderProducts(products)">Filter</button>
