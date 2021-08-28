@@ -10,9 +10,11 @@ const movies = [{"title": "'71","year": 2014,"rating": 7.2,"votes": 41702,"runni
 
 // movies with a short title
 const shortTitles = movies.filter((movie) => movie.title.length <= 5);
+console.log(shortTitles)
 
 // array of movies titles with long movie titles
-const longTitles = movies.filter((movie) => movie.title.length <= 5);
+const longTitles = movies.filter((movie) => movie.title.length >= 5);
+console.log(longTitles)
 
 // number of movies made between 1980-1989 (including both the years)
 const numberOfMovies = movies.filter((movie) => movie.year >= 1980 && movie.year <= 1989).length
