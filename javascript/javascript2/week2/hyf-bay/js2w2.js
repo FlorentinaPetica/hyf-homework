@@ -5,6 +5,8 @@ const newNumbers = numbers.filter((number) => number % 2 !== 0)
                         .map((number) => number * 2)
 console.log("The doubled numbers are", newNumbers);
 
+let movies = allMovies();
+
 // movies with a short title
 const shortTitles = movies.filter((movie) => movie.title.length <= 5);
 console.log(shortTitles)
