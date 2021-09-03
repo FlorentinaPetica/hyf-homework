@@ -62,7 +62,7 @@ button2.addEventListener("click", () => {
 });
 
 function success(pos) {
-  var crd = pos.coords;
+  const crd = pos.coords;
   targetParagraf.innerHTML = `This is the latitude : ${crd.latitude}<br>
                                 This is the longitude: ${crd.longitude}`;
 }
@@ -127,7 +127,7 @@ jokeCreator("true", funnyJoke, badJoke);
 /*-----------------------------------------------------------------------------------------------------
 Function as a variable => Create funtions that are used in these different ways:
 -------------------------------------------------------------------------------------------------------*/
-let array = [
+const array = [
   function sayJoke() {
     console.log("How to say a joke");
   },
@@ -141,9 +141,10 @@ let array = [
   },
 ];
 
-for (i = 0; i < array.length; i++) {
-  array[i]();
-}
+array.forEach(element => {
+  element()
+});
+
 //-----------------------------------------------------------------------------------------------------
 console.log(sum(5, 6)); // can be called before or after the definition
 
