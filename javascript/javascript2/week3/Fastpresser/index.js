@@ -6,13 +6,14 @@ const input = document.getElementById("input");
 const leftPlayer = document.querySelector(".leftPlayer");
 const rightPlayer = document.querySelector(".rightPlayer");
 
-var confettiElement = document.getElementById("my-canvas");
-var confettiSettings = { target: confettiElement };
-var confetti = new ConfettiGenerator(confettiSettings);
+const confettiElement = document.getElementById("my-canvas");
+const confettiSettings = { target: confettiElement };
+const confetti = new ConfettiGenerator(confettiSettings);
 
 function inputValue() {
   return input.value;
 }
+
 // Setting a count down until the game will start
 button.addEventListener("click", loopArray);
 
@@ -64,8 +65,9 @@ function registerNumberOfClicks() {
       right.innerHTML = rightResult;
     }
   }
+
   //Timer for how long the game will be and getting the results back
-  const setGameDuration = inputValue() * 1000 + 4000;
+  const setGameDuration = inputValue() * 1000;
   setTimeout(showResult, setGameDuration);
 
   function showResult() {
