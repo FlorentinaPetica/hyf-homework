@@ -1,4 +1,7 @@
 // Visual promise ------- One by one
+const redBox = document.querySelector("ul.marks li:nth-child(1)");
+const blueBox = document.querySelector("ul.marks li:nth-child(2)");
+const greenBox = document.querySelector("ul.marks li:nth-child(3)");
 
 const redX = 20 - parseInt(redBox.style.left)
 const redY = 300 - parseInt(redBox.style.top)
@@ -20,7 +23,7 @@ async function translateOneByOne() {
         throw error
     }
 }
-//translateOneByOne()
+translateOneByOne()
 
 //Visual promise ------- All at one
 
@@ -37,4 +40,4 @@ function translateAllAtOnce() {
         throw error
     })
 }
-translateAllAtOnce()
+//translateAllAtOnce()
