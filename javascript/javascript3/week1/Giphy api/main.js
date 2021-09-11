@@ -14,7 +14,7 @@ function getInputSearch() {
   let url;
   if (searchNumber.value === "") {
     url = `https://api.giphy.com/v1/stickers/search?api_key=UgmywZJ9nZlGgedyMvIBS9bW8PHezGhr&q=${inputSearch}&limit=1&offset=0&rating=g&lang=en`;
-  } else if (searchNumber.value > 1) {
+  } else if (searchNumber.value >= 1) {
     url = `https://api.giphy.com/v1/stickers/search?api_key=UgmywZJ9nZlGgedyMvIBS9bW8PHezGhr&q=${inputSearch}&limit=${searchNumber.value}&offset=0&rating=g&lang=en`;
   }
   if (inputSearch === "") {
