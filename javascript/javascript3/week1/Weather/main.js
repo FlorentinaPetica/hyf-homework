@@ -40,14 +40,18 @@ function fetchWeather() {
     .then((response) => response.json())
     .then((data) => {
         console.log(data)
+        if (data.cod == "404") {
+            alert(data.message)
+        } else {
         const lat = data.coord.lat.toFixed(2);
         const lon = data.coord.lon.toFixed(2);
         const sunrise = new Date(data.sys.sunrise * 1000).toLocaleString().split(',')[1]
         const sunset = new Date(data.sys.sunset * 1000).toLocaleString().split(',')[1]
         const date = new Date(Date.now()).toString().split(',')[0].slice(0,10)
+        const city = data.name;
         tempCelsius = Math.floor(data.main.temp - 273.15)
         
-        document.getElementById('cityName').innerHTML = `${data.name}`;
+        document.getElementById('cityName').innerHTML = city;
         document.getElementById('currentDate').innerHTML = date;
         document.getElementById('wind').innerHTML = data.wind.speed + ' km/h';
         document.getElementById('sunrise').innerHTML = sunrise;
@@ -70,9 +74,10 @@ function fetchWeather() {
         iconDiv.style.display = "block"
         
         getMap(lat, lon)
+    }
     })
     .catch(error => {
-        console.log(error)
+        console.log(`Failed to fetch weather`)
     })
 }
 
