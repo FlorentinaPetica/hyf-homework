@@ -9,6 +9,9 @@ let tempCelsius;
 // get the city the user inputs and returning the api url with the input city
 function getByCity() {
     const inputCity = cityInput.value;
+    if (inputCity === '') {
+        alert('Please insert a valid city name!')
+    } else
     url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&appid=eb0e05f616e7baf83055f99996975c4e`
     fetchWeather()
 }
@@ -69,7 +72,7 @@ function fetchWeather() {
         getMap(lat, lon)
     })
     .catch(error => {
-        console.error(error)
+        console.log(error)
     })
 }
 
