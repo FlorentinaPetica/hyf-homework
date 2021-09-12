@@ -22,15 +22,13 @@ function callsAfterXSeconds(num) {
   const miliseconds = num * 1000;
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve();
+      resolve(`Am I called after ${num}?`);
     }, miliseconds);
   });
 }
 
 callsAfterXSeconds(3)
-  .then(() => {
-    console.log(`Am I called asynchronously?`);
-  })
+  .then(console.log)
   .catch((err) => {
     console.log("Something went wrong");
   });
@@ -52,26 +50,30 @@ setTimeoutPromise(8)
     console.log("Error in set timeout promise");
   });
 
-async function getCurrentLocation() {
-  return new Promise((resolve) => {
-    navigator.geolocation.getCurrentPosition(function (success) {
-      const crd = success.coords;
-      const position = { lat: crd.latitude, long: crd.longitude };
-      resolve(position);
-    });
-  });
-}
-
-getCurrentLocation()
+function getCurrentLocation() {
+  return new Promise((resolve, reject) => {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((success) => {
+        const crd = success.coords;
+        const position = { lat: crd.latitude, long: crd.longitude }
+        resolve(position);
+      })
+      } else {
+        reject(`Position not found`)
+      }
+    })
+  }
+  
+  getCurrentLocation()
   .then((position) => {
     // called when the users position is found
     console.log(position);
   })
-  .catch((error) => {
+  .catch((message) => {
     // called if there was an error getting the users location
-    console.log("Position error");
-  });
-
+    console.log(message);
+  })
+  
 /*  ---------------------------------------------------------
 Do the 3 steps below using promises and .then.
 1. Wait 3 seconds
@@ -79,27 +81,27 @@ Do the 3 steps below using promises and .then.
 3. Log out the data from the api 
 -------------------------------------------------------------*/
 
-setTimeout(() => {
-  fetch("https://animechan.vercel.app/api/random")
-    .then((response) => response.json())
-    .then((quotes) => {
-      console.log(quotes.quote);
-    })
-    .catch((error) => {
-      console.log("Error!");
-    });
-}, 4000);
+// setTimeout(() => {
+//   fetch("https://animechan.vercel.app/api/random")
+//     .then((response) => response.json())
+//     .then((quotes) => {
+//       console.log(quotes.quote);
+//     })
+//     .catch((error) => {
+//       console.log("Error!");
+//     });
+// }, 4000);
 
 // Do the 3 steps using async/await
 
-async function getRandomAnimeQuotes() {
-  try {
-    const response = await fetch("https://animechan.vercel.app/api/random");
-    const quotes = await response.json();
-    console.log(quotes.quote);
-  } catch (err) {
-    console.log("Faild to fetch");
-  }
-}
+// async function getRandomAnimeQuotes() {
+//   try {
+//     const response = await fetch("https://animechan.vercel.app/api/random");
+//     const quotes = await response.json();
+//     console.log(quotes.quote);
+//   } catch (err) {
+//     console.log("Faild to fetch");
+//   }
+// }
 
-setTimeout(getRandomAnimeQuotes, 5000);
+//setTimeout(getRandomAnimeQuotes, 5000);
