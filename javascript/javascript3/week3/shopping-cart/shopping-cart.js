@@ -90,10 +90,15 @@ class ShoppingCart {
     searchProduct.addEventListener("input", (e) => {
       const searchValue = e.target.value.toLowerCase();
       const matchProducts = allProducts.filter((product) =>
-        product.name.toLowerCase().match(searchValue)
+      product.name.toLowerCase().match(searchValue)
       );
-      productsList.innerHTML = "";
-      shoppingCart.renderProducts(matchProducts);
+      console.log(matchProducts)
+        if (matchProducts.length != 0) {
+        productsList.innerHTML = "";
+        shoppingCart.renderProducts(matchProducts);
+      } else {
+        alert('No matches found')
+      }
     });
   }
 
