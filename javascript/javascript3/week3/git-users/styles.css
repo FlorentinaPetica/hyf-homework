@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+span {
+    font-weight: bold;
+    color: crimson;
+    font-size: 18px;
+}
+
+ul li:first-child{
+    padding-top: 15px;
+}

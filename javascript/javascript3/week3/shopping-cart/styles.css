@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.user {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  display: inline;
+  font-weight: bold;
+  color: #dc143c;
+  font-size: 1.1em;
+}
+
+span {
+  vertical-align: top;
+  font-weight: bold;
+}
+
+#cart {
+  padding-bottom: 25px;
+}
+
+#productsDiv {
+  text-align: center;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+ul li:first-child {
+  padding-top: 15px;
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+  list-style-position: inherit;
+}
+
+button {
+  background-color: #dc143c;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+}
