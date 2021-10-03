@@ -25,5 +25,6 @@ JOIN user
 ON user.id = user_task.user_id
 WHERE user.name LIKE 'Maryrose Meadows' AND MONTH(created)=09;
 -- Find how many tasks where created in each month,
-SELECT COUNT(id) as nrOfMonthlyTasks FROM task
-GROUP BY MONTH(created);
+SELECT month(created) as Month, count(*) as Tasks_count
+FROM task
+GROUP BY month(created);
