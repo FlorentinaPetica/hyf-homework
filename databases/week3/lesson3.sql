@@ -126,19 +126,22 @@ SELECT * FROM meal
 WHERE month(created_date) BETWEEN 07 AND 10;
 -- Get only specific number of meals fx return only 5 meals
 SELECT * FROM meal
-ORDER BY id LIMIT 2, 5;
+ORDER BY id LIMIT 5;
 -- Get the meals that have good reviews
 SELECT review.*, meal.title as meal_type FROM review
 LEFT JOIN meal ON meal_id = meal.id
 WHERE stars >= 4
 ORDER BY stars DESC;
 -- Get reservations for a specific meal sorted by created_date
-SELECT reservation.*, meal.title, meal.max_reservations FROM reservation 
-LEFT JOIN meal ON meal_id = meal.id
+SELECT meal.title, reservation.meal_id, SUM(reservation.number_of_guests), reservation.created_date AS Res_created_date
+FROM reservation
+JOIN meal ON meal.id=reservation.meal_id
 WHERE meal_id=6
-ORDER BY created_date DESC; 
+GROUP BY reservation.created_date
+ORDER BY reservation.created_date DESC;
 -- Sort all meals by average number of stars in the reviews
-SELECT meal_id, meal.title, AVG(stars) as 'Average Stars'
-FROM review
-LEFT JOIN meal ON meal_id = meal.id
-GROUP BY meal_id;
+SELECT meal.Id, meal.title , AVG(stars)
+FROM meal
+JOIN review ON meal.id=review.meal_id
+GROUP BY meal_id
+ORDER BY AVG(stars) DESC;
