@@ -6,5 +6,14 @@
         "description" : "A nice night out eating delicious indian food",
         "createdAt" : "2019/12/7 14:34",
         "price" : 67
+    },
+    {
+        "id" : 2,
+        "title" : "Danish jule frokost",
+        "maxNumberOfGuests" : 15,
+        "description" : "Enjoy the company of your colleagues on a nice christmas lunch",
+        "createdAt" : "2021/11/25 14:34",
+        "price" : 299
     }
 ]
+
