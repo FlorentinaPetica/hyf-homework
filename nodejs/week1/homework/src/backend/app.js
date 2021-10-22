@@ -38,11 +38,7 @@ app.get("/cheap-meals", async (request, response) => {
 
 // Respond with the json for all the meals (including it's reviews) that can fit lots of people
 app.get("/large-meals", async (request, response) => {
-  const largeMeals = reviewedMeals.filter((meal) => {
-    if (meal.maxNumberOfGuests > 10) {
-      return meal;
-    }
-  });
+  const largeMeals = reviewedMeals.filter((meal) => (meal.maxNumberOfGuests > 10));
   response.json(largeMeals);
 });
 
