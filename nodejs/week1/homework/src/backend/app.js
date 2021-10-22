@@ -32,11 +32,7 @@ app.get("/meals", async (request, response) => {
 
 // Respond with the json for all the meals (including it's reviews) that are cheap (you define what a cheap meal is)
 app.get("/cheap-meals", async (request, response) => {
-  const cheapMeals = reviewedMeals.map((meal) => {
-    if (meal.price < 100) {
-      return meal;
-    }
-  });
+    const cheapMeals = reviewedMeals.filter(meal=>meal.price<100);
   response.json(cheapMeals);
 });
 
