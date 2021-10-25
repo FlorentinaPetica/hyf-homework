@@ -35,10 +35,10 @@ app.post("/calculator/add", (req, res) => {
     res.send({result: `${addition}`})
 })
 
-app.post("/calculator/multiply", (req, res) => {
+app.post("/calculator/subtraction", (req, res) => {
     const requestedNum = Object.values(req.query).map(num => Number(num))
-    const multiply = requestedNum.reduce((previousValue, currentValue) => previousValue * currentValue)
-    res.send({result: `${multiply}`})
+    const subtraction = requestedNum.reduce((previousValue, currentValue) => previousValue - currentValue)
+    res.send({result: `${subtraction}`})
 })
 
 app.post("/calculator/multiply", (req, res) => {
