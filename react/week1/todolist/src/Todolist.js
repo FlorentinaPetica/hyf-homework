@@ -1,5 +1,5 @@
 import React from "react";
-import TodoListItem from './Todoitem'
+import TodoListItem from './TodoListItem'
 import todos from './todos.json'
 
 const TodoList = () => {
