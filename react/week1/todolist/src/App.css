@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+.TodoList > ul {
+  list-style: none;
+}
