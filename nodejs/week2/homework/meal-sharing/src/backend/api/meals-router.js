@@ -49,7 +49,7 @@ router.get("/", async (request, response) => {
           // /api/meals -	Respond with the json for all the meals
           response.json(sortedMeals);
         } else {
-          response.status(400).json({ error: "Bad request" });
+          response.status(400).json({ error: "Request parameter is not supported." });
         }
       } catch (error) {
         throw error;
