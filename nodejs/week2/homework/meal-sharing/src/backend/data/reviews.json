@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "numberOfStars": 4,
+    "content": "Best meal ever",
+    "mealId": 1,
+    "createdAt": 12345
+  },
+    {
+    "id": 2,
+    "numberOfStars": 4,
+    "content": "Great vibe",
+    "mealId": 1,
+    "createdAt": 12350
+  },
+  {
+    "id": 3,
+    "numberOfStars": 4.5,
+    "content": "Delicious",
+    "mealId": 5,
+    "createdAt": 12895
+  },
+  {
+    "id": 4,
+    "numberOfStars": 5,
+    "content": "Excellent",
+    "mealId": 9,
+    "createdAt": 12888
+  },
+  {
+    "id": 5,
+    "numberOfStars": 2,
+    "content": "Not the best food",
+    "mealId": 1,
+    "createdAt": 12349
+  },
+  {
+    "id": 6,
+    "numberOfStars": 1,
+    "content": "Awfull",
+    "mealId": 3,
+    "createdAt": 12449
+  },
+  {
+    "id": 7,
+    "numberOfStars": 3.5,
+    "content": "Good",
+    "mealId": 8,
+    "createdAt": 12333
+  },
+  {
+    "id": 8,
+    "numberOfStars": 4.7,
+    "content": "Best ever",
+    "mealId": 6,
+    "createdAt": 12300
+  },
+  {
+    "id": 9,
+    "numberOfStars": 2,
+    "content": "Bad taste",
+    "mealId": 11,
+    "createdAt": 12300
+  },
+  {
+    "id": 10,
+    "numberOfStars": 5,
+    "content": "The best",
+    "mealId": 6,
+    "createdAt": 12450
+  },
+  {
+    "id":11,
+    "numberOfStars": 4,
+    "content": "Great serving",
+    "mealId": 5,
+    "createdAt": 12250
+  },
+  {
+    "id": 12,
+    "numberOfStars": 3,
+    "content": "Can not complain",
+    "mealId": 9,
+    "createdAt": 12870
+  }
+]

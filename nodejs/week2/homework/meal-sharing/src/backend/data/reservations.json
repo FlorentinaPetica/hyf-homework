@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Benjamin Hughes",
+    "email": "benjamin@hughes.dk",
+    "mealId": 1
+  },
+  {
+    "id": 2,
+    "name": "Florentina Petica",
+    "email": "florentina@gmail.dk",
+    "mealId": 2
+  },
+  {
+    "id": 3,
+    "name": "George Alex",
+    "email": "george.alex@yahoo.dk",
+    "mealId": 7
+  },
+  {
+    "id": 4,
+    "name": "Jiu Tak",
+    "email": "jiu.tak@gmail.dk",
+    "mealId": 11
+  },
+  {
+    "id": 5,
+    "name": "Danni Hansen",
+    "email": "dannih@yahoo.mail",
+    "mealId": 8
+  },
+  {
+    "id": 6,
+    "name": "Kinga Fargas",
+    "email": "kingafar@gmail.hu",
+    "mealId": 6
+  },
+  {
+    "id": 7,
+    "name": "Iulia Huzum",
+    "email": "huzumI@gmail.ro",
+    "mealId": 5
+  },
+  {
+    "id": 8,
+    "name": "Laurentiu Mihai",
+    "email": "mihailau@yahoo.mail",
+    "mealId": 7
+  },
+  {
+    "id": 9,
+    "name": "Mihaela Aura",
+    "email": "miamia@mail.ro",
+    "mealId": 10
+  },
+  {
+    "id": 10,
+    "name": "Niklas Lyng",
+    "email": "niklasnik@hotmail.dk",
+    "mealId": 9
+  }
+]

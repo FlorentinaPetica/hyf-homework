@@ -1,0 +1,98 @@
+[
+    {
+        "id" : 1,
+        "title" : "Indian food in the summer",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious indian food",
+        "createdAt" : "2019/12/7 14:34",
+        "price" : 67
+    },
+    {
+        "id" : 2,
+        "title" : "Danish jule frokost",
+        "maxNumberOfGuests" : 15,
+        "description" : "Enjoy the company of your colleagues on a nice christmas lunch",
+        "createdAt" : "2021/11/25 14:34",
+        "price" : 299
+    },
+    {
+        "id" : 3,
+        "title" : "Roumanian food",
+        "maxNumberOfGuests" : 25,
+        "description" : "Have a traditional roumanian food with your friends.",
+        "createdAt" : "2021/11/28 16:30",
+        "price" : 150
+    },
+    {
+        "id" : 4,
+        "title" : "Nigiri",
+        "maxNumberOfGuests" : 9,
+        "description" : "Nigiri or nigirizushi is a special kind of hand-pressed sushi where the meat is sliced and pressed on top of sushi rice.",
+        "createdAt" : "2020/09/11 18:30",
+        "price" : 229
+    },
+    {
+        "id" : 5,
+        "title" : "Satay",
+        "maxNumberOfGuests" :35,
+        "description" : "Satay is a traditional Indonesian dish consisting of skewered meat that's served with a sauce on the side.",
+        "createdAt" : "2021/01/11 17:45",
+        "price" : 175
+    },
+    {
+        "id" : 6,
+        "title" : "Banchan",
+        "maxNumberOfGuests" :55,
+        "description" : "The term banchan encompasses a wide variety of Korean dishes that are traditionally served on small plates.",
+        "createdAt" : "2022/02/12 13:55",
+        "price" : 249
+    },
+    {
+        "id" : 7,
+        "title" : "Bruschetta",
+        "maxNumberOfGuests" : 6,
+        "description" : "Bruschetta is a traditional Italian appetizer that's nowadays popular throughout the world.",
+        "createdAt" : "2022/01/23 10:55",
+        "price" : 99
+    },
+    {
+        "id" : 8,
+        "title" : "Churros",
+        "maxNumberOfGuests" : 7,
+        "description" : "Elongated, crispy, crunchy and intensely fragrant, churros consist of deep-fried yeast dough encrusted with sugar. ",
+        "createdAt" : "2021/10/31 09:55",
+        "price" : 45
+    },
+    {
+        "id" : 9,
+        "title" : "Chutney",
+        "maxNumberOfGuests" : 7,
+        "description" : "Whether Indians are enjoying tandoori chicken or aloo paratha, no meal is complete without the flavorful chutneys - India's national condiments.",
+        "createdAt" : "2020/08/19 22:55",
+        "price" : 110
+    },
+    {
+        "id" : 10,
+        "title" : "Ceviche",
+        "maxNumberOfGuests" : 14,
+        "description" : "Ceviche is the national dish of Peru consisting of slices of raw fish or shellfish that is spiced with salt, onions, and chili peppers, then marinated in lime juice.",
+        "createdAt" : "2020/08/21 23:55",
+        "price" : 179
+    },
+    {
+        "id" : 11,
+        "title" : "Fajitas",
+        "maxNumberOfGuests" : 16,
+        "description" : "Fajitas is a popular Tex-Mex dish made from marinated, grilled skirt steak that is served in a wheat flour tortilla. ",
+        "createdAt" : "2021/06/01 02:03",
+        "price" : 550
+    },
+    {
+        "id" : 12,
+        "title" : "Tonkatsu",
+        "maxNumberOfGuests" : 33,
+        "description" : "The breaded, deep-fried pork cutlet tonkatsu is a Japanese dish with a very recent history.",
+        "createdAt" : "2021/07/06 10:03",
+        "price" : 330
+    }
+]
