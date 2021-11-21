@@ -13,9 +13,10 @@ const listOfTodos = [
 function App() {
   const [todos, setTodo] = useState(listOfTodos);
   let newTodos = [...todos];
+  const randomId = Math.floor(Math.random() * 10000)
 
   const addTodo = () => {
-    const newTodo = { id: todos.length + 1, description: "Random text" };
+    const newTodo = { id: randomId, description: "Random text" };
     newTodos = todos.concat(newTodo);
     setTodo(newTodos);
   };
