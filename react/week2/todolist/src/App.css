@@ -1,0 +1,22 @@
+.App {
+  margin: 10px 15px;
+}
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+.TodoList > ul {
+  list-style: none;
+}
+
+button {
+  margin-left: 15px;
+}
+
+.TodoListItem {
+  display: flex;
+  text-align: center;
+  padding-top: 5px;
+}
