@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import UserProvider from "./UserContext";
+import InputSearch from "./Components/InputSearch";
+import UserList from "./Components/UserList";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <UserProvider>
+      <div className="App">
+        <InputSearch />
+        <UserList />
+      </div>
+    </UserProvider>
   );
 }
 
