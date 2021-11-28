@@ -4,15 +4,14 @@ const Timer = () => {
     const [timer, setTimer] = useState(0)
 
     useEffect(() => {
-        const startTimer = setTimeout(() => {
+        const startTimer = setInterval(() => {
             setTimer((timer) => timer + 1)
         }, 1000)
         return () => clearTimeout(startTimer)
-    }, [timer])
+    }, [])
 
     return (
         <div>
-            
             <p>You have used {timer} seconds on this app.</p>
         </div>
     )

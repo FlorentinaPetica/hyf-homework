@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import {MdOutlineAddToPhotos} from 'react-icons/md'
+import uuid from 'react-uuid'
 
 const TodoForm = ({ addTodo }) => {
-    const randomId = Math.floor(Math.random() * 10000)
+    // const randomId = Math.floor(Math.random() * 10000)
     const [todo, setTodo] = useState({
     id: "",
     description: "",
@@ -24,7 +25,7 @@ const TodoForm = ({ addTodo }) => {
   const handleSubmit = (e) => {
     e.preventDefault(); // prevents browser refresh
     if (todo.description.trim()) {
-      addTodo({ ...todo, id: randomId });
+      addTodo({ ...todo, id: uuid() });
       setTodo({ ...todo, description: "", deadline: "" });
     }
   }
