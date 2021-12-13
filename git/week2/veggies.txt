@@ -1,6 +1,6 @@
 carrots
 onions
-potatoes
+tomatoes
 broccoli
 mushrooms
 cucumber
