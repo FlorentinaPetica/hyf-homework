@@ -1,5 +1,7 @@
 carrots
 onions
-poatatoes
+potatoes
 broccoli
 mushrooms
+cucumber
+pepers
