@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lobster Two", cursive;
+}
+
+body {
+  text-align: center;
+  background-color: mediumseagreen;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid;
+  background: none;
+  padding-left: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+button {
+  border: none;
+  background: none;
+  margin-bottom: 25px;
+}
+
+button:hover {
+  font-size: 1.1rem;
+}
+
+.appContainer {
+  width: 60%;
+  margin: 5% auto;
+}
+
+.appContainer > div > div {
+  background-color: rgba(189, 225, 222, 0.7);
+  margin: 15px;
+  border-radius: 10px;
+}
+
+h1 {
+  padding-bottom: 25px;
+}
+
+.appHead {
+  text-align: center;
+}
+
+#giphArea {
+  display: block;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 50%;
+}
