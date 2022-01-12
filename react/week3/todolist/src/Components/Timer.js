@@ -12,7 +12,7 @@ const Timer = () => {
 
     return (
         <div>
-            <p>You have used {timer} seconds on this app.</p>
+            <p>You have spend {timer} seconds on this app.</p>
         </div>
     )
 }
