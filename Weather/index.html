@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather app</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+                integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+                crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                crossorigin=""></script>
+        <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="searchCity">
+                <div>
+                    <input type="text" id="city" placeholder="Enter city name">
+                    <button id="search">Search</button>
+                </div>
+                <button id="position"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="18" height="18" viewBox="0 0 24 24" stroke-width="2" stroke="#ffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="11" r="3" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+            </svg>Your location</button>
+        </div>
+        <div class="location">
+            <h1 id="cityName"></h1>
+            <h3 id="degrees"></h3><span id="icon"></span>
+            <div>
+                <input type="radio" id="celsius" name="drone" value="celsius">
+      <label for="celsius">&#8451;</label>
+      <input type="radio" id="fahrenheit" name="drone" value="fahrenheit">
+      <label for="fahrenheit">&#8457;</label>
+            </div>
+            <div id="iconDiv">
+                <img src="" alt="icon" id="iconOpw">
+            </div>
+            <span id="currentDate"></span>
+        </div>
+    </div>
+    <div class="weather">
+        <div>
+            <h2>Wind speed</h2>
+            <h3 id='wind'></h3>
+        </div>
+        <div>
+            <h2>Sky</h2>
+            <h3 id="cloud"></h3>
+        </div>
+        <div>
+            <h2>Sunrise</h2>
+            <h3 id="sunrise"></h3>
+        </div>
+        <div>
+            <h2>Sunset</h2>
+            <h3 id="sunset"></h3>
+        </div>
+    </div>
+    <div id="mapid"><div></div>
+
+</div>
+
+
+    <script src="main.js"></script>
+    <script src="coolapi.js"></script>
+</body>
+</html>
